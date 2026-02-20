@@ -1,0 +1,65 @@
+body{
+    background-image: url("download.jpg");
+    background-size: cover; 
+    background-position: center;    
+}
+#main_content{
+   min-height: 100vh;
+    display: grid;
+    grid-template-columns: 220px 1fr 1fr 1fr;
+    grid-template-areas: 
+    'header header header header header'
+    'navigation content content content content'
+    'navigation content content content content'
+    'footer footer footer footer footer';
+}
+#header{
+    grid-area: header ;
+    text-align: center;
+}
+#navigation{
+    grid-area: navigation ;
+}
+#content{
+   text-align: center;
+    grid-area: content ;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#footer{
+    grid-area: footer;
+    
+}
+#footer_content{
+    display: flex;
+    justify-content: space-between;
+}
+#footer_text{
+    text-align: center ;
+    
+}
+.table-body{
+  display: flex;
+  justify-content: center;
+}
+  .error{
+    border: 1px solid red;
+}   
+form {
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: left; 
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    min-width: 50%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
